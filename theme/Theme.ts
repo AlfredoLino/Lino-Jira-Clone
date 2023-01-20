@@ -19,7 +19,34 @@ export const theme = createTheme({
       },
     },
     typography:{
-        fontFamily: 'Roboto, sans-serif'
+        fontFamily: 'Roboto, sans-serif',
+        h2: {
+          fontFamily: 'Roboto Slab',
+          color: orange[300]
+        },
+        h1: {
+          fontFamily: 'Roboto Slab',
+          textAlign: 'center',
+          backgroundImage: 'radial-gradient(circle, rgba(106,82,179,1) 0%, rgba(255,176,38,1) 76%)',
+          backgroundClip: 'text',
+          color: 'transparent',
+          
+        },
+        body1: {
+          fontFamily: 'Roboto Slab',
+          fontWeight: '500',
+          fontSize: '.875rem',
+          textAlign: 'center',
+          lineHeight: '1.5rem',
+          color: orange[300]
+        },
+        body2: {
+          fontFamily: 'Roboto',
+          fontWeight: '500',
+          fontSize: '.875rem',
+          textAlign: 'center',
+        }
+
     },
     components: {
         MuiAppBar: {

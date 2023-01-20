@@ -2,13 +2,14 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import IconButton from '@mui/material/IconButton';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { Typography } from '@mui/material';
 
-const pages = ['New', 'Search']
+const pages = ['New']
 
 export default function Navbar() {
 
@@ -29,6 +30,7 @@ export default function Navbar() {
                     edge="start"
                     color="inherit"
                     aria-label="menu"
+                    onClick={()=>router.push('/')}
                     sx={{ 
                         mr: 2,
                     }}
@@ -51,14 +53,38 @@ export default function Navbar() {
                     >
                         Dashboard
                     </Button>
+                    <Button
+                        key={'anime-quotes'}
+                        sx={{ my: 2, color: "secondary.dark", display: "block" }}
+                        onClick = {()=> router.push('/anime-quotes')}
+                    >
+                        Anime quotes
+                    </Button>
                 </Box>
-                <Button sx={{
+                <Typography sx={{
                 display: {
                     xs: 'none',
                     sm: 'block',
                     md: 'block'
-                }
-                }} color="inherit">Login</Button>
+                },
+                mr: '1rem',
+                textTransform: 'uppercase',
+                
+                color: 'secondary.dark',
+                
+                }} variant = 'body2' color="inherit">Alfredo Lino</Typography>
+                <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={()=>router.push('/')}
+                    sx={{ 
+                        mr: 2,
+                    }}
+                >
+                    <ArrowDropDownIcon />
+                </IconButton>
                 <Button sx={{
                 display: {
                     xs: 'block',

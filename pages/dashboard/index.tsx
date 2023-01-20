@@ -7,7 +7,7 @@ const index = () => {
   return (
     <>
         <GradientHeader text='Dashboard de tareas'/>
-        <Grid px={2} container spacing={2}>
+        <Grid p={2} container spacing={2}>
           <Grid
           item lg={4} sm = {12} xs = {12}>
             <Card sx={{
