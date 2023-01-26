@@ -1,6 +1,6 @@
 import React from 'react'
 import { GradientHeader } from '@/components/GradientHeader';
-import { Box, CardContent, Grid, Card, CardHeader } from '@mui/material';
+import { Box, CardContent, Grid, Card, CardHeader, Typography } from '@mui/material';
 import { useRouter } from 'next/router';
 import type { TQuote } from '@/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -26,13 +26,21 @@ const Quotes: React.FC<Props> = (props) => {
                             <Grid key={quote.quote}item lg={4} sm = {6} xs = {12}>
                                 <Card sx={{
                                     height: '17rem',
-                                    overflow: 'scroll'
                                 }}>
-                                    <CardHeader
-                                        title = {quote.character}
-                                    />
                                     <CardContent>
-                                        {quote.quote}
+                                        <Box>
+                                        <Typography component={'p'} fontSize={'3rem'} variant='h1'>
+                                            {quote.character}
+                                        </Typography>
+                                        <Typography
+                                            sx={{
+                                                color: 'secondary.light'
+                                            }}
+                                            fontStyle= 'italic'
+                                        >
+                                            &quot;{quote.quote}&quot;
+                                        </Typography>
+                                        </Box>
                                     </CardContent>
                                 </Card>
                             </Grid>
@@ -67,7 +75,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     const anime: string = ctx.params?.anime as string;
     const {data} = await quoteClient.get<TQuote[]>(`/anime?title=${anime}`)
-    console.log(data);
+
     return {
         props: {
             quotes: data

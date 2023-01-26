@@ -14,6 +14,7 @@ export const theme = createTheme({
         light: orange[200]
       },
       secondary: {
+        light: '#424242',
         main: blueGrey[300],
         dark: blueGrey[900]
       },
@@ -22,7 +23,9 @@ export const theme = createTheme({
         fontFamily: 'Roboto, sans-serif',
         h2: {
           fontFamily: 'Roboto Slab',
-          color: orange[300]
+          backgroundImage: 'radial-gradient(circle, rgba(255,176,38,1) 0%, rgba(106,82,179,1) 76%)',
+          backgroundClip: 'text',
+          color: 'transparent',
         },
         h1: {
           fontFamily: 'Roboto Slab',
@@ -32,20 +35,31 @@ export const theme = createTheme({
           color: 'transparent',
           
         },
+        h3: {
+          fontFamily: 'Roboto Slab',
+          textAlign: 'center',
+          backgroundImage: 'radial-gradient(circle, rgba(106,82,179,1) 0%, rgba(255,176,38,1) 76%)',
+          backgroundClip: 'text',
+          color: 'transparent',
+        },
         body1: {
           fontFamily: 'Roboto Slab',
           fontWeight: '500',
-          fontSize: '.875rem',
+          fontSize: '1rem',
           textAlign: 'center',
           lineHeight: '1.5rem',
           color: orange[300]
         },
         body2: {
-          fontFamily: 'Roboto',
+          fontFamily: 'Roboto Slab',
           fontWeight: '500',
           fontSize: '.875rem',
           textAlign: 'center',
+          backgroundImage: 'radial-gradient(circle, rgba(255,204,128,1) 0%, rgba(255,183,77,1) 50%)',
+          backgroundClip: 'text',
+          color: 'transparent',
         }
+
 
     },
     components: {
@@ -55,6 +69,14 @@ export const theme = createTheme({
                     background: 'linear-gradient(27deg, rgba(255,183,77,1) 0%, rgba(255,167,38,1) 76%)'
                 }
             }
+        },
+        MuiCardHeader:{
+          styleOverrides: {
+            root:{
+                fontFamily: 'Roboto Slab'
+            },
+
+        }
         }
     }
   })

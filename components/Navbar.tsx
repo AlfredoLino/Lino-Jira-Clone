@@ -33,26 +33,14 @@ export default function Navbar() {
                     onClick={()=>router.push('/')}
                     sx={{ 
                         mr: 2,
+                        
                     }}
                 >
                     <Image src={'/nombrefirma.PNG'} alt='navbar icon' height={50} width={150}/>
                 </IconButton>
-                <Box sx={{ flexGrow: 1, display: { xs: "none", sm: 'flex', md: "flex", lg: 'flex' } }}>
-                    {pages.map((page) => (
-                    <Button
-                        key={page}
-                        sx={{ my: 2, color: "secondary.dark", display: "block" }}
-                    >
-                        {page}
-                    </Button>
-                    ))}
-                    <Button
-                        key={'dashboard'}
-                        sx={{ my: 2, color: "secondary.dark", display: "block" }}
-                        onClick = {()=> router.push('/dashboard')}
-                    >
-                        Dashboard
-                    </Button>
+                <Box sx={{ 
+                    flexGrow: 1, 
+                    display: { xs: "none", sm: 'flex', md: "flex", lg: 'flex' } }}>
                     <Button
                         key={'anime-quotes'}
                         sx={{ my: 2, color: "secondary.dark", display: "block" }}
@@ -61,18 +49,6 @@ export default function Navbar() {
                         Anime quotes
                     </Button>
                 </Box>
-                <Typography sx={{
-                display: {
-                    xs: 'none',
-                    sm: 'block',
-                    md: 'block'
-                },
-                mr: '1rem',
-                textTransform: 'uppercase',
-                
-                color: 'secondary.dark',
-                
-                }} variant = 'body2' color="inherit">Alfredo Lino</Typography>
                 <IconButton
                     size="large"
                     edge="start"
@@ -80,18 +56,16 @@ export default function Navbar() {
                     aria-label="menu"
                     onClick={()=>router.push('/')}
                     sx={{ 
-                        mr: 2,
+                        
+                        display: {
+                            xs: 'block',
+                            sm: 'none',
+                            md: 'none'
+                        },
                     }}
                 >
                     <ArrowDropDownIcon />
                 </IconButton>
-                <Button sx={{
-                display: {
-                    xs: 'block',
-                    sm: 'none',
-                    md: 'none'
-                }
-            }} color="inherit">Menu</Button>
             </Toolbar>
         </AppBar>
         </Box>
