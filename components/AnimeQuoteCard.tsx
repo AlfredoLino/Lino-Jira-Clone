@@ -35,6 +35,9 @@ const AnimeQuoteCard: React.FC<Props> = ({name, src, apiname, resume}) => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     transition: 'background-size 720ms ease',
+                    fontSize: {
+                        xs: '5rem'
+                    },
                     '&:hover': {
                         'background-size': '700px'
                     },
@@ -44,16 +47,11 @@ const AnimeQuoteCard: React.FC<Props> = ({name, src, apiname, resume}) => {
 
                 }}>
                     
-                    <Typography component={'p'} fontSize={'6rem'} variant='h1'>
+                    <Typography component={'p'} variant='h2'>
                         {name}
                     </Typography>
                 </Box>
             </CardMedia>
-            <CardContent>
-                <Typography fontSize={'1.5rem'} variant='body2'>
-                    {resume}
-                </Typography>
-            </CardContent>
         </Card>
     )
 }

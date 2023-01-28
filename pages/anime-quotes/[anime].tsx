@@ -17,7 +17,7 @@ const Quotes: React.FC<Props> = (props) => {
     return (
         <section>
             <Box component={'header'}>
-                <GradientHeader text={`Frases de ${router.query.anime}`.toUpperCase()}/>
+                <GradientHeader text={`${router.query.anime} QUOTES`.toUpperCase()}/>
             </Box>
             <Box p='1rem'>
                 <Grid p={2} container spacing={2}>
@@ -26,6 +26,7 @@ const Quotes: React.FC<Props> = (props) => {
                             <Grid key={quote.quote}item lg={4} sm = {6} xs = {12}>
                                 <Card sx={{
                                     height: '17rem',
+                                    overflow: 'scroll'
                                 }}>
                                     <CardContent>
                                         <Box>
