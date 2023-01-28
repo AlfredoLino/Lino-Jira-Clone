@@ -40,14 +40,14 @@ export const StackTecElement: React.FC<Props> = ({title, meAndText, experience, 
       }}
       >
         <Box width={'20rem'}>
-        <GradientHeader v='h3' text={`Me and ${title}`} size={30} />
+        <GradientHeader v='h3' text={`Me and ${title}`} />
           <Typography variant='body1'>
             {meAndText}
           </Typography>
         </Box>
         <Image src={img} alt='React logo' width={300} height={300} />
         <Box width={'20rem'}>
-          <GradientHeader v='h3' text='About my experience' size={30} />
+          <GradientHeader v='h3' text='About my experience' />
           <Typography variant='body1'>
             {experience}
           </Typography>
