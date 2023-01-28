@@ -17,8 +17,8 @@ const AnimeList = () => {
       <section>
           <Box component={'header'}>
               <GradientHeader text='Anime Quotes'/>
-              <Typography variant='body1'>
-                  Animes y frases que me gustan de algunos de sus personajes.
+              <Typography variant='h3'>
+                  Some quotes from mangas I have read.
               </Typography>
           </Box>
 

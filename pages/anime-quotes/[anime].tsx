@@ -17,7 +17,7 @@ const Quotes: React.FC<Props> = (props) => {
     return (
         <section>
             <Box component={'header'}>
-                <GradientHeader text={`${router.query.anime} QUOTES`.toUpperCase()}/>
+                <GradientHeader v='h2' text={`${router.query.anime} QUOTES`.toUpperCase()}/>
             </Box>
             <Box p='1rem'>
                 <Grid p={2} container spacing={2}>

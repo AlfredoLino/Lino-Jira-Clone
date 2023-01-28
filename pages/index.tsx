@@ -14,6 +14,7 @@ import DevExperience from '@/components/DevExperience';
 import ButNow from '@/components/ButNow';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import { WhoAmI } from '@/components/WhoAmI';
 
 
 export default function Home() {
@@ -33,9 +34,11 @@ export default function Home() {
 
       <ResumeHeader />
 
-      <FavoriteTecStack />
+      <WhoAmI/>
 
       <DevExperience />
+
+      <FavoriteTecStack />
 
       <ButNow />
 

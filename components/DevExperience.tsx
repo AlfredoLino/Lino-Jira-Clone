@@ -6,7 +6,9 @@ import { StackTecElement } from './StackTecElement'
 const DevExperience = () => {
   return (
     <section>
-        <Box>
+        <Box sx={{
+                    backgroundColor: 'secondary.light'
+        }}>
         <GradientHeader v='h2' text='My experience in development'/>
         <Divider />
         <Box p={'2rem'}>            

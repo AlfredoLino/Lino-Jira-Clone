@@ -7,7 +7,6 @@ const FavoriteTecStack = () => {
   return (
     <Box sx = {{
         textAlign: 'center',
-        backgroundColor: 'secondary.light'
       }}
         pb= '1rem'
       >
@@ -36,10 +35,10 @@ const FavoriteTecStack = () => {
             </Grid>
             <Grid item lg={12} md={6} sm={12} xs={12}>
               <StackTecElement
-                title='Express.js'
-                img='/express.svg'
+                title='Node.js'
+                img='/node.svg'
                 meAndText='It was de first backend library I learned for API Rest and I really enjoy making backend job with it'
-                experience='I have quite experience with express on API REST projects'
+                experience='I have quite experience with express on API REST projects. Since a CRUD until auth and file uploading'
               />
             </Grid>
             <Grid item lg={12} md={6} sm={12} xs={12}>
