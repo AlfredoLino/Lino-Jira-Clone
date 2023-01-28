@@ -7,7 +7,7 @@ const DevExperience = () => {
   return (
     <section>
         <Box>
-        <GradientHeader text='My experience in development'/>
+        <GradientHeader v='h2' text='My experience in development'/>
         <Divider />
         <Box p={'2rem'}>            
             <StackTecElement 
