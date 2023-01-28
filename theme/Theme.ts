@@ -26,7 +26,7 @@ export const theme = createTheme({
           backgroundImage: 'radial-gradient(circle, rgba(255,176,38,1) 0%, rgba(106,82,179,1) 76%)',
           backgroundClip: 'text',
           color: 'transparent',
-          fontSize: '4rem'
+          fontSize: '3rem'
         },
         h1: {
           fontFamily: 'Roboto Slab',
