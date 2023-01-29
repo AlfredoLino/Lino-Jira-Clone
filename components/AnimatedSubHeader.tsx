@@ -66,6 +66,7 @@ const AnimatedSubHeader = () => {
           position: 'absolute',
           width: '100%',
           textAlign: 'center',
+          lineHeight: '2rem',
           animation: 'opacity2 12s ease infinite normal',
           '@keyframes opacity2': {
             'from': {
@@ -110,6 +111,7 @@ const AnimatedSubHeader = () => {
           position: 'absolute',
           width: '100%',
           textAlign: 'center',
+          lineHeight: '2rem',
           animation: 'opacity4 12s ease infinite normal',
           '@keyframes opacity4': {
             'from': {

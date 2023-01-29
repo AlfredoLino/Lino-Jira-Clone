@@ -15,7 +15,7 @@ const ResumeHeader = () => {
     <Box 
     sx={{
       border: '10px solid',
-      py: '3rem',
+      py: '4rem',
       width: '90%',
       backgroundColor: 'transparent',
       borderImageSource: 
