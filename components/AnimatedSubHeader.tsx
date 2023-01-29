@@ -4,13 +4,36 @@ import React from 'react'
 const AnimatedSubHeader = () => {
   return (
     <Box>
-    <Typography color='primary' variant='h2' fontWeight={500} >Alfredo Lino Mendoza</Typography>
+      <Box sx={{
+        borderBlockEnd: '5px solid',
+        borderImageSource: 'radial-gradient(circle,  rgba(106,82,179,1) 50%, rgba(255,176,38,1) 80%)',
+        borderImageSlice: '1',
+        padding: '1rem',
+
+      }}>
+        <Typography 
+          sx={{
+            fontSize:{
+              xs: '3rem',
+              sm: '3.5rem',
+              md: '5rem',
+              lg: '6rem'
+            },
+            lineHeight: {
+              xs: '2.5rem',
+              sm: '3.2rem',
+              md: '5rem',
+            }
+          }}
+        color='primary' fontWeight={500} >Alfredo Lino Mendoza</Typography>
+      </Box>
     <Box
     height={'2rem'}
     >
       <Box
         sx={{
           height: '2rem',
+          paddingTop: '1rem',
           position: 'relative',
           width: '100%',
           lineHeight: '2rem',

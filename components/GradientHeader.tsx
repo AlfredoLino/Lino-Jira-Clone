@@ -13,7 +13,7 @@ export const GradientHeader: React.FC<Props> = ({text, v}) => {
       mt: '2rem',
     }}
   >
-    <Typography variant={v || 'h2'}  fontWeight={600}>
+    <Typography variant={v || 'h2'}  fontWeight={400}>
       {text}
     </Typography>
   </Box>
