@@ -44,8 +44,8 @@ const ResumeHeader = () => {
     sx={{
 
     }}
-    borderRadius={'10px'} p='0'>
-      <Image style={{borderRadius: '10px', padding: '0.5rem'}} src={'/resumephoto.jpg'} alt='Perfil' width={150*2} height={200*2} />
+    borderRadius={'100%'} p='0'>
+      <Image style={{borderRadius: '100%', padding: '0.5rem'}} src={'/me.jpg'} alt='Perfil' width={300} height={300} />
     </Box>
     <Divider flexItem orientation='vertical' />
     <AnimatedSubHeader />

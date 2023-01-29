@@ -53,6 +53,10 @@ export const WhoAmI = () => {
                 borderImageSource: 
                 'linear-gradient(114deg, rgba(255,0,50,1) 0%, rgba(111,26,182,1) 33%, rgba(205,4,4,1) 66%, rgba(61,23,102,1) 100%)',
                 borderImageSlice: '1',
+                transition: 'border-image-slice ease 770ms',
+                '&:hover': {
+                  borderImageSlice: '60'
+                }
               }}
             >
               <Typography

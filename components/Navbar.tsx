@@ -91,7 +91,12 @@ export default function Navbar() {
                     }}
                 >
                     <MenuItem 
-                    onClick = {()=> router.push('/anime-quotes')}
+                    onClick = {()=> 
+                        {
+                            router.push('/anime-quotes')
+                            handleClose()
+                        }
+                        }
                     >ANIME QUOTES</MenuItem>
 
                 </Menu>
