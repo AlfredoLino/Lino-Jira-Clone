@@ -8,14 +8,14 @@ const ResumeHeader = () => {
     <Box component={'section'}
       sx= {{
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
       }}
     >
 
     <Box 
     sx={{
       border: '10px solid',
-      padding: '2rem',
+      py: '3rem',
       width: '90%',
       backgroundColor: 'transparent',
       borderImageSource: 

@@ -58,7 +58,10 @@ export const WhoAmI = () => {
               <Typography
                 sx={{
                   color: 'secondary.main',
-                  fontSize: '4rem'
+                  lineHeight: '3rem',
+                  fontSize: {
+                    xs: '3rem'
+                  }
                 }}
               >
                 Read my cv
