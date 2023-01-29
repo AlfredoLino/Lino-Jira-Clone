@@ -6,7 +6,7 @@ const AnimatedSubHeader = () => {
     <Box>
       <Box sx={{
         borderBlockEnd: '5px solid',
-        borderImageSource: 'radial-gradient(circle,  rgba(106,82,179,1) 50%, rgba(255,176,38,1) 80%)',
+        borderImageSource: 'linear-gradient(27deg, rgba(255,183,77,1) 0%, rgba(255,167,38,1) 76%)',
         borderImageSlice: '1',
         padding: '1rem',
 
