@@ -13,7 +13,7 @@ const Footer = () => {
         alignItems: 'center'
     }} 
     component={'footer'}>
-        <Image src={'/nombrefirma.PNG'} alt='navbar icon' height={50} width={150}/>
+        <Image src={'/nombrefirma.ico'} alt='navbar icon' height={50} width={150}/>
 
     </Box>
   )
