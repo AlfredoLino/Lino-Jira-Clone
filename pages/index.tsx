@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Alfredo Lino Personal Web page" />
         <meta property="og:description" content="This is my personal web page where I post my programing stuff" />
-        <meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
+        <meta property="og:image" content="https://alfredolino.vercel.app/page-preview.jpg" />
         <link rel="icon" href="/nombrefirma.png" />
       </Head>
 
