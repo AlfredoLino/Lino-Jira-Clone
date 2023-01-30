@@ -45,7 +45,7 @@ export default function Navbar() {
                         
                     }}
                 >
-                    <Image src={'/nombrefirma.PNG'} alt='navbar icon' height={50} width={150}/>
+                    <Image src={'/nombrefirma.ico'} alt='navbar icon' height={50} width={150}/>
                 </IconButton>
                 <Box sx={{ 
                     flexGrow: 1, 
