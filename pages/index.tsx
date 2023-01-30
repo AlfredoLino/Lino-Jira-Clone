@@ -29,10 +29,11 @@ export default function Home() {
         <title>Alfredo Lino - resume</title>
         <meta name="description" content="Alfredo Lino Resume" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Alfredo Lino Personal Web page" />
-        <meta property="og:description" content="This is my personal web page where I post my programing stuff" />
+        <meta property="og:title" content="Alfredo Lino - Personal website" />
+        <meta property="og:description" content="This is my personal website where I post my programming stuff" />
+        <meta property="og:type" content="webpage" />
         <meta property="og:image" content="https://alfredolino.vercel.app/page-preview.jpg" />
-        <link rel="icon" href="/nombrefirma.png" />
+        <link rel="icon" href="/nombrefirma.ico" />
       </Head>
 
       <ResumeHeader />

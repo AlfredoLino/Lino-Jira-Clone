@@ -12,7 +12,7 @@ const AnimeList = () => {
         <title>Alfredo Lino - Anime Quotes</title>
         <meta name="description" content="Alfredo Lino Resume" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/nombrefirma.png" />
+        <link rel="icon" href="/nombrefirma.ico" />
       </Head>
       <section>
           <Box component={'header'}>
