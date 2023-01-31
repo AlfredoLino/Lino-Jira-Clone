@@ -1,8 +1,9 @@
 import React from 'react'
-import { Grid, Typography, Box, Card, CardHeader, IconButton, CardContent, CardMedia } from '@mui/material';
-import { GradientHeader } from '@/components/GradientHeader';
-import AnimeQuoteCard from '@/components/AnimeQuoteCard';
 import Head from 'next/head';
+import { sxFlexColumn } from '@/MuiStyles';
+import { Grid, Typography, Box} from '@mui/material';
+import AnimeQuoteCard from '@/components/AnimeQuoteCard';
+import { HeaderWithBorder } from '@/components/HeaderWithBorder';
 
 
 const AnimeList = () => {
@@ -15,10 +16,15 @@ const AnimeList = () => {
         <link rel="icon" href="/nombrefirma.ico" />
       </Head>
       <section>
-          <Box component={'header'}>
-              <GradientHeader text='Anime Quotes'/>
+          <Box 
+          sx={{
+            ...sxFlexColumn
+          }}
+          component={'header'}>
+              <HeaderWithBorder text='Anime quotes'/>
               <Typography variant='h3'>
-                  Some quotes from mangas I have read.
+                  Some quotes from mangas I have read. I made this for practicing the Static site generation (SSG) with Next.js.
+                  It uses a public API. <a rel="noreferrer" href='https://animechan.vercel.app/' target={'_blank'}>ANIMECHAN</a>
               </Typography>
           </Box>
 

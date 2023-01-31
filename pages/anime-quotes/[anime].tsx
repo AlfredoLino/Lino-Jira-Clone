@@ -5,6 +5,8 @@ import { useRouter } from 'next/router';
 import type { TQuote } from '@/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import quoteClient from '../api/anime-quotes';
+import { HeaderWithBorder } from '@/components/HeaderWithBorder';
+import { sxFlexColumn } from '@/MuiStyles';
 
 
 interface Props {
@@ -16,8 +18,12 @@ const Quotes: React.FC<Props> = (props) => {
 
     return (
         <section>
-            <Box component={'header'}>
-                <GradientHeader v='h2' text={`${router.query.anime} QUOTES`.toUpperCase()}/>
+            <Box 
+                sx={{
+                    ...sxFlexColumn
+                }}
+            component={'header'}>
+                <HeaderWithBorder text={`${router.query.anime} QUOTES`.toUpperCase()}/>
             </Box>
             <Box p='1rem'>
                 <Grid p={2} container spacing={2}>
