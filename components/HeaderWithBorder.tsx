@@ -7,14 +7,12 @@ export const HeaderWithBorder: React.FC<{text: string}> = ({text}) => {
     sx={{
       width: 'max-content',
       my: '1rem',
-      borderBlockEnd: '5px solid',
-      borderInlineStart: '5px solid',
-      borderBlockStart: '5px solid',
+      border: '5px solid',
       backgroundColor: 'transparent',
       p:'1rem',
       borderImageSource: 
-      'linear-gradient(114deg, rgba(255,0,50,1) 0%, rgba(111,26,182,1) 33%,  transparent 66%)',
-      borderImageSlice: '2',
+      'linear-gradient(114deg, rgba(255,0,50,1) 0%, rgba(111,26,182,1) 33%, rgba(205,4,4,1) 66%, rgba(61,23,102,1) 100%)',
+      borderImageSlice: '1 fill',
     }}
     >
       <Typography
@@ -25,6 +23,7 @@ export const HeaderWithBorder: React.FC<{text: string}> = ({text}) => {
             md: '2.5rem',
             lg: '3rem'
           },
+          color: 'rgba(255,167,38,1)',
           lineHeight: {
             xs: '2rem',
             sm: '2.2rem',

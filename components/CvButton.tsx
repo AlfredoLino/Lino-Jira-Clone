@@ -9,7 +9,7 @@ export const CvButton = () => {
     target= '_blank'
     sx={{
       
-      color: 'secondary.main',
+      color: 'secondary.dark',
       lineHeight: '2rem',
       fontSize: {
         xs: '1.5rem'
