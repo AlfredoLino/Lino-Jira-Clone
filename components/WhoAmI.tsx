@@ -29,6 +29,16 @@ export const WhoAmI = () => {
             transform: 'skewY(-3deg)',
             
           },
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            inset: '0',
+            background: 'linear-gradient(114deg, rgba(255,0,50,1) 0%, rgba(111,26,182,1) 33%, rgba(205,4,4,1) 66%, rgba(61,23,102,1) 100%)',
+            zIndex: '-2',
+            opacity: '0.5',
+            transform: 'skewY(3deg)',
+          },
+        
       }}
     >
 
