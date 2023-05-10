@@ -62,7 +62,7 @@ export default function Navbar() {
                         sx={{ my: 2, color: "secondary.dark", display: "block" }}
                         onClick = {()=> router.push('/parse-app')}
                     >
-                        Parse App
+                        Parse-App
                     </Button>
                 </Box>
                 <IconButton

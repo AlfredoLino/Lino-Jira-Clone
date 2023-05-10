@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
         sx={
           {
             ...sxFlexColumn,
-            height: '100%'
+            height: '100vh'
 
           }
         }
