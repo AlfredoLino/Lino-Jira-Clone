@@ -57,6 +57,13 @@ export default function Navbar() {
                     >
                         Anime quotes
                     </Button>
+                    <Button
+                        key={'parse-app'}
+                        sx={{ my: 2, color: "secondary.dark", display: "block" }}
+                        onClick = {()=> router.push('/parse-app')}
+                    >
+                        Parse App
+                    </Button>
                 </Box>
                 <IconButton
                     size="large"
@@ -98,6 +105,14 @@ export default function Navbar() {
                         }
                         }
                     >ANIME QUOTES</MenuItem>
+                    <MenuItem 
+                    onClick = {()=> 
+                        {
+                            router.push('/parse-app')
+                            handleClose()
+                        }
+                        }
+                    >PARSE APP</MenuItem>
 
                 </Menu>
 
