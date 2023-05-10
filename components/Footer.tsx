@@ -8,6 +8,7 @@ const Footer = () => {
     sx={{
         height: '100px',
         background: 'linear-gradient(27deg, rgba(255,183,77,1) 0%, rgba(255,167,38,1) 76%)',
+        width: '100%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

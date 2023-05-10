@@ -1,6 +1,6 @@
 export const sxFlexColumn = {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
 }
