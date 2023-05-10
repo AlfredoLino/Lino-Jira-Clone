@@ -36,7 +36,7 @@ export default function ParseForm() {
             }}
         >
             <Card sx={{
-                py: "1rem",
+                py: "1.5rem",
                 gap: "1rem",
                 ...sxFlexColumn
             }}>
@@ -48,6 +48,14 @@ export default function ParseForm() {
                     first name, last name, and id values.
                     An example input would be “Robert000Smith000123”. The function should return the following
                     using that input:
+                    
+                </Typography>
+                <Typography
+                sx={{
+                    color: 'secondary.dark'
+                }}
+                >
+                    { "“first_name”: “Robert”, “last_name”: “Smith”, “id”: “123”" }
                 </Typography>
                 <TextField
                     value={code} onChange={(e) => { setCode(e.target.value) }} variant='filled' label="Code" color='secondary' />
